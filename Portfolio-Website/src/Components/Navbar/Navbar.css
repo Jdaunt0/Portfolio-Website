@@ -6,11 +6,13 @@
 }
 
 .navbar{
+    width: 850px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
     font-family: 'Coolvetica', Arial, sans-serif;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-menu{
@@ -19,4 +21,25 @@
     list-style: none;
     gap: 60px;
     font-size: 20px;
+}
+
+.nav-menu li{
+    cursor:pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
 }

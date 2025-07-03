@@ -8,29 +8,58 @@
 .about{
     display:flex;
     align-items:center;
+    justify-content: center;
     flex-direction: column;
     font-family: 'Coolvetica', Arial, sans-serif;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 100px;
+    padding: 60px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 1300px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    margin-top:150px; 
+    flex-shrink: 0;
 }
 
 .about h1{
-    text-align: center;
-    width: 70%;
+    text-align: left;
+    width: 100%;
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .about p{
-    width: 50%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
     font-size: 24px;
     line-height: 40px;
+    margin-bottom: 30px;
 }
 
 .about-action{
@@ -40,4 +69,49 @@
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 50px;
+}
+
+.react{
+    color:#59C4DC;
+}
+
+.swift{
+    color:#F05039;
+}
+
+.sql{
+    color:#02758F;
+}
+
+.aws{
+    color:#FF9A00;
+    font-size: 42px;
+    position: relative;
+    top: 15px;
+}
+
+.cplusplus{
+    color:#01599E;
+    font-size: 32px;
+    position: relative;
+    top: 5px;
+}
+
+.python{
+    color:#3772A3;
+}
+
+.java{
+    color:#E56B03;
+}
+
+.php{
+    color:#8A93BE;
+}
+
+.elephpant{
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    transform: scaleX(-1);
 }
