@@ -8,7 +8,7 @@ const Navbar = () => {
       cornerRadius={25}
       style={{
         position: "fixed",
-        top: "5%",
+        top: "7%",
         left: "50%",
         zIndex: 100,
       }}

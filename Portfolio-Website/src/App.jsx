@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar/Navbar'
 import About from './Components/About/About'
 import Silk from './Components/Background/Silk'
 import GlassButton from './Components/GlassButton/GlassButton'
+import Contact from './Components/Contact/Contact'
+import Portfolio from './Components/Portfolio/Portfolio'
 
 const App = () => {
   return (
@@ -18,9 +20,7 @@ const App = () => {
           rotation={0}
         />
       </div>
-      <GlassButton text="Contact Me"/>
-      <About/>
-      <About/>
+      <Portfolio/>
     </div>
   )
 }

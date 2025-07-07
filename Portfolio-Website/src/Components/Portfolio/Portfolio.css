@@ -1,0 +1,48 @@
+.heading{
+    font-size: 150px;
+    display:flex;
+    justify-content: center;
+}
+
+.portfolio-content{
+    padding-left: 25%;
+    padding-right: 25%;
+    min-width: 850px;
+}
+
+.projects-content{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.swiper {
+     width: 100%;
+     max-width: 1300px;
+}
+
+.swiper .swiper-slide {
+    background-color: black;
+    width: 850px !important;
+    height: 600px !important;
+    border-radius: 20px;
+}
+
+.swiper .swiper-slide > * {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.swiper .swiper-slide img {
+    width: 100%;
+    padding: 20px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+    box-sizing: border-box;
+}
+
+
+

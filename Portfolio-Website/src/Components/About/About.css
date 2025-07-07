@@ -1,16 +1,8 @@
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('../../assets/fonts/Coolvetica Rg.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .about{
     display:flex;
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Coolvetica', Arial, sans-serif;
     min-height: 100vh;
     padding: 50px 20px;
 }

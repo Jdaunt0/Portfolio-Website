@@ -1,16 +1,8 @@
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('../../assets/fonts/Coolvetica Rg.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .navbar{
     width: 850px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Coolvetica', Arial, sans-serif;
     position: relative;
     z-index: 100;
 }
