@@ -9,9 +9,11 @@ import Portfolio from './Components/Portfolio/Portfolio'
 const App = () => {
   return (
     <div>
-      <div style={{ position: 'relative', minHeight: '100vh' }}>
+      <div style={{ position: 'relative'}}>
         <Navbar/>
         <About/>
+        <Portfolio/>
+        <Contact/>
         <Silk
           speed={5}
           scale={1}
@@ -20,7 +22,7 @@ const App = () => {
           rotation={0}
         />
       </div>
-      <Portfolio/>
+      
     </div>
   )
 }

@@ -125,7 +125,7 @@ const Silk = ({
         top: 0,
         left: 0,
         width: '100vw',
-        height: '100vh',
+        height: '270vh',
         zIndex: -1,
         pointerEvents: 'none'
       }}
