@@ -9,13 +9,17 @@ const Contact = () => {
   return (
     <div className="contact">
       <h1 className="heading">Contact</h1>
-      <p>James Daunt</p>
-      <p>E <a href="">Jdaunt0@gmail.com</a></p>
-      <p>P <a href="">0403 958 752</a></p>
-      <GlassButton text={<><FaLinkedin className="large-icon" />
-                           <FaGithub className="large-icon"/>
-                           <TbFileCv className="large-icon"/> 
-                           </>}/>
+      <div className="contact-content">
+        <p>James Daunt</p>
+        <p>E <a href="">Jdaunt0@gmail.com</a></p>
+        <p>P <a href="">0403 958 752</a></p>
+        <div className="menu">
+          <GlassButton text={<><FaLinkedin className="large-icon" />
+                            <FaGithub className="large-icon"/>
+                            <TbFileCv className="large-icon"/> 
+                            </>}/>
+        </div>
+      </div>
     </div>
   )
 }

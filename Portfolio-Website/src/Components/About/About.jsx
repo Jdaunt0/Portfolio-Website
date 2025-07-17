@@ -1,14 +1,12 @@
 import React from 'react'
 import profile_img from '../../assets/profile.png'
-import LiquidGlass from 'liquid-glass-react'
-import { IoLogoReact } from "react-icons/io5";
-import { DiSwift, DiMysql } from "react-icons/di";
-import { GrMysql } from "react-icons/gr";
-import { FaAws, FaPython, FaJava } from "react-icons/fa6";
+import { GrSwift, GrMysql  } from "react-icons/gr";
+import { FaReact, FaAws, FaPython, FaJava } from "react-icons/fa6";
 import { SiCplusplus } from "react-icons/si";
 import { GiElephant } from "react-icons/gi";
 import GlassButton from '../GlassButton/GlassButton';
 import './About.css'
+
 const About = () => {
   return (
     <div className='about'>
@@ -16,8 +14,8 @@ const About = () => {
         <div className="about-content">
           <h1>Hi 👋<br/>I'm James, <br/>a software & web developer</h1>
           <p>I have experience in 
-            <span className="react"> <IoLogoReact/> React </span>,
-            <span className="swift"> <DiSwift/> Swift </span>,
+            <span className="react"> <FaReact/> React </span>,
+            <span className="swift"> <GrSwift/> Swift </span>,
             <span className="sql"> <GrMysql/> SQL </span>,
             <span className="aws"> <FaAws/> </span>,
             <br/>

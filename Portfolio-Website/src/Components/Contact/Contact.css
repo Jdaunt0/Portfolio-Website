@@ -1,13 +1,36 @@
 .contact{
     background: rgb(40, 36, 36);
-    min-height: 99vh;
-    padding-top: 150px;
+    min-height: 40vh;
+    padding-top: 50px;
 }
 .heading{
     font-size: 150px;
     display:flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
+
+.contact-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content p{
+    font-size: 18px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.contact-content p a{
+    color: white;
+    font-weight: normal;
+}
+
+.menu{
+    padding-top:50px;
+}
+
 .large-icon {
     font-size: 50px;
     margin-right: 100px;

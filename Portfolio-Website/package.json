@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/fiber": "^9.2.0",
     "framer-motion": "^12.23.0",
+    "i": "^0.3.7",
     "liquid-glass-react": "^1.1.1",
     "react": "^19.1.0",
     "react-bits": "^1.0.5",

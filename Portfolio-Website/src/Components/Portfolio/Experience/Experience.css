@@ -1,0 +1,17 @@
+.work-experience {
+  border-collapse: separate;
+}
+
+.work-experience .row td,
+.work-experience .row th {
+  padding-bottom: 40px;
+}
+.work-experience tr th{
+    text-align: left;
+    vertical-align: center;
+    width: 70px;
+}
+.work-experience tr th img{
+    width: 50px;
+}
+

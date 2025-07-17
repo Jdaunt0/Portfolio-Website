@@ -1,5 +1,6 @@
 import React from 'react'
 import LiquidGlass from 'liquid-glass-react'
+import './GlassButton.css'
 
 const GlassButton = ({ text = "Add Text" }) => {
   const content = typeof text === 'string' ? 
@@ -8,18 +9,12 @@ const GlassButton = ({ text = "Add Text" }) => {
     )) : text;
   
   return (
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'left', 
-      alignItems: 'top', 
-      paddingLeft: '78px',
-      paddingRight: '90px',
-      paddingTop: '40px',
-    }}>
-      <div style={{ position: 'relative', display: 'inline-block' }}>
+    <div className="button-container">
+      <div className='button'>
         <LiquidGlass
           style={{
-            position: "absolute",
+            cursor: "pointer",
+            position: "absolute", 
             top: "0",
             left: "0",
             transform: "none",
@@ -27,14 +22,8 @@ const GlassButton = ({ text = "Add Text" }) => {
           elasticity={0.05}
           displacementScale={30}
         >
-          <div style={{ 
-            display: 'flex',
-            gap: '8px',
-            color: 'white',
-            fontWeight: '500',
-            fontSize: '16px'
-          }}>
-            {content}
+          <div className='button-content'>
+              {content}
           </div>
         </LiquidGlass>
       </div>

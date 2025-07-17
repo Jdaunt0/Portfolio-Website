@@ -1,0 +1,21 @@
+.button-container{
+    display: flex; 
+    justify-content: left; 
+    align-items: top; 
+    padding-left: 78px;
+    padding-right: 90px;
+    padding-top: 40px;
+}
+
+.button{
+    position: relative;
+    display: inline-block;
+}
+
+.button-content{
+    display: flex;
+    gap: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 16p;
+}
