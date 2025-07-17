@@ -14,7 +14,7 @@ const About = () => {
     <div className='about'>
       <div className="about-container">
         <div className="about-content">
-          <h1>Hi, 👋<br/>I'm James <br/>A software & web developer</h1>
+          <h1>Hi 👋<br/>I'm James, <br/>a software & web developer</h1>
           <p>I have experience in 
             <span className="react"> <IoLogoReact/> React </span>,
             <span className="swift"> <DiSwift/> Swift </span>,

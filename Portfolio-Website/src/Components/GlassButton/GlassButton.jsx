@@ -2,7 +2,10 @@ import React from 'react'
 import LiquidGlass from 'liquid-glass-react'
 
 const GlassButton = ({ text = "Add Text" }) => {
-  const words = text.split(' ');
+  const content = typeof text === 'string' ? 
+    text.split(' ').map((word, index) => (
+      <span key={index}>{word}</span>
+    )) : text;
   
   return (
     <div style={{ 
@@ -31,9 +34,7 @@ const GlassButton = ({ text = "Add Text" }) => {
             fontWeight: '500',
             fontSize: '16px'
           }}>
-            {words.map((word, index) => (
-              <span key={index}>{word}</span>
-            ))}
+            {content}
           </div>
         </LiquidGlass>
       </div>
