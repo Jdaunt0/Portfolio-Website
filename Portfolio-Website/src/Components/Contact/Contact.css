@@ -3,6 +3,7 @@
     min-height: 40vh;
     padding-top: 50px;
 }
+
 .heading{
     font-size: 150px;
     display:flex;
@@ -11,6 +12,7 @@
 }
 
 .contact-content{
+    width: 100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -38,4 +40,21 @@
 
 .large-icon:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 600px){
+    .contact .heading {
+        font-size: 100px !important;
+        width: 100%;
+        text-align: center;
+        display: block;
+        justify-content: unset;
+    }
+
+
+    .contact .large-icon {
+        font-size: 30px !important;
+        margin-right: 40px;
+        vertical-align: middle;
+    }
 }

@@ -1,10 +1,12 @@
+.projects{
+    max-width: 1500px;
+}
 
 .projects-content{
     display: flex; 
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
 }
 
 .swiper {

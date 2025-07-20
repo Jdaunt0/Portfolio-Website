@@ -8,8 +8,8 @@ import Portfolio from './Components/Portfolio/Portfolio'
 
 const App = () => {
   return (
-    <div>
-      <div style={{ position: 'relative'}}>
+
+    <div style={{ position: 'relative'}}>
         <Navbar/>
         <About/>
         <Portfolio/>
@@ -22,8 +22,7 @@ const App = () => {
           rotation={0}
         />
       </div>
-      
-    </div>
+
   )
 }
 

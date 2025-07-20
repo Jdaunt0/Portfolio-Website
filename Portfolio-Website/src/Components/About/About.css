@@ -107,3 +107,11 @@
     top: 5px;
     transform: scaleX(-1);
 }
+
+@media(max-width: 1300px){
+    .about-container {
+        width: auto;
+        flex-direction: column;
+    }
+
+}

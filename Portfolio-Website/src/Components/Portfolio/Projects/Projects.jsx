@@ -15,10 +15,8 @@ import { FaGithub } from "react-icons/fa6";
 
 const Projects = () => {
   return (
-    <div>
-        <div>
-            <h2>Projects</h2><hr/><br/>   
-        </div>
+    <div className="projects">
+        <h2>Projects</h2><hr/><br/>
         <div className="projects-content">
             <Swiper
             effect={'coverflow'}

@@ -7,6 +7,10 @@
     z-index: 100;
 }
 
+.nav-menu-mobile {
+    display: none;
+}
+
 .nav-menu{
     display: flex;
     align-items: center;
@@ -34,4 +38,30 @@
 
 .nav-menu li:hover::after {
     width: 100%;
+}
+
+@media (max-width: 930px){
+    .navbar{
+        width: 700px;
+    }
+}
+
+@media (max-width: 780px){
+    .navbar{
+        width: 400px;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu-mobile {
+        display: unset;
+        color: white;
+        font-size: 25px;
+    }
+
+    .mobile-button {
+        color: white !important;
+        font-size: 25px !important;
+    }
 }
