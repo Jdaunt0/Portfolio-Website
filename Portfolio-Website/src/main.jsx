@@ -2,9 +2,22 @@ import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import LiveStats from './Components/LiveStats/LiveStats.jsx'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />|
+      <LiveStats />
+    </ThemeProvider>
   </StrictMode>,
 )
