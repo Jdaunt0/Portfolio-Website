@@ -6,7 +6,7 @@ import UOWLogo from '../../../assets/UOW_Logo.png';
 
 const Experience = () => {
   return (
-    <div>
+    <div className='container'>
         <h2>Experience</h2><hr/><br/>
         <table className='work-experience'>
             <tbody>
