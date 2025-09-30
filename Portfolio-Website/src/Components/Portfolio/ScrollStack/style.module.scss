@@ -1,0 +1,29 @@
+.cardContainer{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: sticky;
+    top: 4rem;
+    padding:0px;
+    .card{
+        background: #23272F;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+        position: relative;
+        top: -10%;
+        width:90%;
+        height:80vh;
+        border-radius:50px;
+        padding:24px;
+    }
+}
+
+.stacktitle {
+    width: 90%;
+    top: 2rem;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
