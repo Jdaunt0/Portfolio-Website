@@ -24,7 +24,6 @@ const LiveStats = () => {
     <div className={styles.liveStats}>
       {leetcodeStats && (
         <>
-          <h1>Leetcode</h1>
           <div className={styles.leetcode}>
             <Gauge
               value={leetcodeStats.easySolved + leetcodeStats.mediumSolved + leetcodeStats.hardSolved}
@@ -61,7 +60,6 @@ const LiveStats = () => {
           </div>
         </>
       )}
-      <h1>github</h1>
       <div className={styles.github}>
         <GitHubCalendar username="jdaunt0" />
       </div>

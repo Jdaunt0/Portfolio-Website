@@ -1,8 +1,9 @@
 import styles from './style.module.scss';
 import { useTransform, motion, useScroll} from 'framer-motion'
 import { useRef, useEffect } from 'react'
-import LiveStats from '../LiveStats/LiveStats';
+import LiveStats from '../LiveStatsNew/LiveStats'
 import Experience from '../Experience/Experience'
+import Portfolio from '../ProjectsNew/Projects'
 
 const Stack = () => {
     const container = useRef(null);
@@ -11,7 +12,7 @@ const Stack = () => {
         offset: ['start start', 'end end']
     })
 
-    const opacity = useTransform(scrollYProgress, [0, .01, .98, 1], [0, 1, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0, .01, .9999, 1], [0, 1, 1, 0]);
     const title = useTransform(
         scrollYProgress,
         [0, 0.39, 0.90, 1],
@@ -44,7 +45,7 @@ const Stack = () => {
             </Card>
 
             <Card index={3} progress={scrollYProgress}>
-                <h1>Portfolio</h1>
+                <Portfolio/>
             </Card>
         </div>
 

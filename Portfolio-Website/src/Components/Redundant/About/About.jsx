@@ -4,7 +4,7 @@ import { GrSwift, GrMysql  } from "react-icons/gr";
 import { FaReact, FaAws, FaPython, FaJava } from "react-icons/fa6";
 import { SiCplusplus } from "react-icons/si";
 import { GiElephant } from "react-icons/gi";
-import GlassButton from '../GlassButton/GlassButton';
+import GlassButton from '../../GlassButton/GlassButton';
 import './About.css'
 
 const About = () => {

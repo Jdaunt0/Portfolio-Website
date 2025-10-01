@@ -27,9 +27,15 @@ const Navbar = () => {
       >
           <h1>James Daunt</h1>
           <ul>
-              <li>About Me</li>
-              <li>Portfolio</li>
-              <li>Contact</li>
+              <li onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}>
+                Experience
+              </li>
+              <li onClick={() => document.getElementById('liveStats')?.scrollIntoView({ behavior: 'smooth' })}>
+                Live Stats
+              </li>
+              <li onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
+                Portfolio
+              </li>
           </ul>
       </LiquidGlass>
     </motion.div>
