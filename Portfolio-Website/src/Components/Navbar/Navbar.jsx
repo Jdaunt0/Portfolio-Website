@@ -8,7 +8,7 @@ const Navbar = () => {
   const opacity = useTransform(scrollYProgress, [.15, 0.25], [1, 0]);
 
   return (
-    <motion.div style={{ opacity }}>
+    <motion.div style={{ opacity, position:"relative"}}>
       <LiquidGlass
           elasticity={0}
           cornerRadius={500}

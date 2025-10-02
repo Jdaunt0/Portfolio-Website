@@ -4,7 +4,7 @@ import resume_pdf from '../../assets/JamesDaunt_Resume.pdf'
 import style from './style.module.scss';
 import GlassButton from '../GlassButton/GlassButton';
 
-const NewAbout = () => {
+const About = () => {
   return (
     <div className={style.about}>
         <div>
@@ -25,4 +25,4 @@ const NewAbout = () => {
   )
 }
 
-export default NewAbout
+export default About

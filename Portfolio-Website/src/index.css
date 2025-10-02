@@ -15,18 +15,20 @@
     font-family: 'Coolvetica', Arial, sans-serif;
 }
 
-h1{
-    font-size: 48px;
+html, body {
+  position: relative;
 }
 
-h2{
-    font-size: 36px;
-}
-
-h3{
-    font-size: 24px;
-}
-
+h1{ font-size: 48px; }
+h2{ font-size: 36px; }
+h3{ font-size: 24px; }
+p{  font-size: 16px;
+    font-family: 'Archivo', sans-serif !important;}
 li {
-    font-family: 'Archivo', sans-serif !important;
+    font-family: 'Archivo', sans-serif !important;}
+
+@media (max-width: 700px){
+    h1{ font-size: 36px; }
+    h2{ font-size: 24px; }
+    h3{ font-size: 20px; }
 }

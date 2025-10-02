@@ -1,16 +1,20 @@
 import React, { useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import Silk from './blocks/Components/Background/Silk'
 import Contact from './Components/Contact/Contact'
 import Stack from './Components/Portfolio/ScrollStack/stack'
-import NewAbout from './Components/AboutNew/NewAbout'
+import About from './Components/About/About'
 import DarkVeil from './blocks/Backgrounds/DarkVeil/DarkVeil'
+import { passiveSupport } from 'passive-events-support/src/utils';
+
+passiveSupport({
+  events: 'touchstart',
+});
 
 const App = () => {
   return (
   <>
       <Navbar/>
-      <NewAbout/>
+      <About/>
       <Stack/>
       <Contact/>
       <DarkVeil />

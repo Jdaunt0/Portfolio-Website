@@ -1,9 +1,9 @@
 import styles from './style.module.scss';
 import { useTransform, motion, useScroll} from 'framer-motion'
 import { useRef, useEffect } from 'react'
-import LiveStats from '../LiveStatsNew/LiveStats'
+import LiveStats from '../LiveStats/LiveStats'
 import Experience from '../Experience/Experience'
-import Portfolio from '../ProjectsNew/Projects'
+import Portfolio from '../Projects/Projects'
 
 const Stack = () => {
     const container = useRef(null);
@@ -18,17 +18,6 @@ const Stack = () => {
         [0, 0.39, 0.90, 1],
         ["", "Experience", "Live Stats", "Portfolio"]
     );
-
-    useEffect(() => {
-    const unsubscribe = scrollYProgress.onChange((latest) => {
-      console.log('Scroll Progress:', latest);
-    });
-
-    return () => unsubscribe();
-  }, [scrollYProgress]);
-
-
-    
     return (
 
         <div ref={container}>

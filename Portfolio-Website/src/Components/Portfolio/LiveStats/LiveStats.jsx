@@ -84,26 +84,3 @@ const LiveStats = () => {
 }
 
 export default LiveStats
-
-{/* {leetcodeStats && (
-          <>
-            <Gauge
-                value={leetcodeStats.easySolved + leetcodeStats.mediumSolved + leetcodeStats.hardSolved}
-                valueMin={0}
-                valueMax={leetcodeStats.totalEasy + leetcodeStats.totalMedium + leetcodeStats.totalHard}
-                innerRadius="80%"
-                outerRadius="100%"
-                cornerRadius="50%"
-                text={({ value }) => `${value} Solved`}
-                sx={{
-                  height: '50%',
-                  width: '30%',
-                  left: '10%',
-                  top: '48px',
-                  [`& .MuiGauge-valueArc`]: {
-                  fill: '#39D353',
-                },
-              }}
-            />
-          </>
-        )} */}

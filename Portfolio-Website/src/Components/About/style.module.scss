@@ -22,3 +22,12 @@
         }
     }
 }
+
+@media (max-width: 700px){
+    .about{
+        text-align: center;
+        .btn{
+            gap: 2rem;
+        }
+    }
+}
