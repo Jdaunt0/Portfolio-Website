@@ -17,7 +17,7 @@ const App = () => {
       <About/>
       <Stack/>
       <Contact/>
-      <DarkVeil />
+      <DarkVeil warpAmount={2.7}/>
       {/* <Silk
         speed={5}
         scale={1}

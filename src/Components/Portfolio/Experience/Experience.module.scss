@@ -48,12 +48,15 @@
       .workExperience{
         tr{
            th{
-            width: 140px !important;
+            width: 90px !important;
             img {
-              width: 100px !important;
+              width: 90px !important;
             }
            }
         }
       } 
+      .content{
+        padding-left:24px;
+      }
   } 
 }

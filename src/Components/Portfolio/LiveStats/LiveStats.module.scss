@@ -82,6 +82,7 @@
             .github{
                 .container {
                     transform: scale(1);
+                    padding: 16px;
                 }
             }
         }
@@ -93,5 +94,11 @@
         .logos{
             display:none;
         }
+    }
+}
+
+@media (max-width: 1000px){
+    .tempContainer{
+        padding:0px;
     }
 }
