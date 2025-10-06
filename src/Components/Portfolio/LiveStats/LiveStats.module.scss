@@ -1,19 +1,3 @@
-.GitHubLogo{
-    width: 150px;
-    height: 150px;
-    &:hover{
-        cursor: pointer;
-    }
-}
-
-.LeetCodeLogo{
-    width: 150px;
-    height: 150px;
-    &:hover{
-        cursor: pointer;
-    }
-}
-
 .tempContainer{
     display:flex;
     align-items: center;
@@ -21,7 +5,7 @@
     width: 100%;
     height: 100%;
     padding:48px;
-    .logos{
+    .logoContainer{
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -30,6 +14,15 @@
         width: 300px !important;
         flex-shrink: 0;
         padding-right: 24px;
+        .logo{
+            width: 150px;
+            height: 150px;
+            transition: all .3s ease-out;
+            &:hover{
+                cursor: pointer;
+                    transform: scale(1.1);
+            }
+        }
     }
     .content{
         width:100%;
@@ -74,7 +67,7 @@
 
 @media (max-width: 1840px){
     .tempContainer{
-        .logos{
+        .logoContainer{
             align-items: center;
             width: 200px !important;
         }  
@@ -91,7 +84,7 @@
 
 @media (max-width: 1000px){
     .tempContainer{
-        .logos{
+        .logoContainer{
             display:none;
         }
     }
@@ -99,6 +92,6 @@
 
 @media (max-width: 1000px){
     .tempContainer{
-        padding:0px;
+        padding:24px;
     }
 }

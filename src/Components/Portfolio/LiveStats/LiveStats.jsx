@@ -24,12 +24,12 @@ const LiveStats = () => {
 
   return (
     <div className={style.tempContainer} id="liveStats">
-        <div className={style.logos}>
+        <div className={style.logoContainer}>
           <a href="https://leetcode.com/u/Daunty0/" target="_blank" rel="noopener noreferrer">
-            <img src={LeetCodeLogo} className={style.LeetCodeLogo}/>
+            <img src={LeetCodeLogo} className={style.logo}/>
           </a>
           <a href="https://github.com/Jdaunt0" target="_blank" rel="noopener noreferrer">
-            <img src={GitHubLogo} className={style.GitHubLogo}/>
+            <img src={GitHubLogo} className={style.logo}/>
           </a>
         </div>
         <div className={style.content}>
@@ -50,14 +50,14 @@ const LiveStats = () => {
                         width: isSmallScreen ? '100%' : '40%',
                         [`& .MuiGauge-valueArc`]: {
                         fill: '#39D353',
-                      },
+                      }, 
                     }}
                   />
                   {!isSmallScreen && (
                     <BarChart
                       layout="horizontal"
                       hideLegend={true}
-                      yAxis={[{ data: ['Easy', 'Medium', 'Hard']}]} 
+                      yAxis={[{ data: ['Easy Leetcode Problems', 'Medium Leetcode Problems', 'Hard Leetcode Problems']}]} 
                       xAxis={[{ min: 0, max: 100 }]}
                       series={[
                         {label: 'Solved', color: '#39D353', data: [leetcodeStats.easySolved, leetcodeStats.mediumSolved, leetcodeStats.hardSolved], stack: 'total'},

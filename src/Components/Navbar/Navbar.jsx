@@ -15,7 +15,6 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    console.log("btn click")
   };
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const Navbar = () => {
   }, [isMediumScreen]);
 
   return (
-    <motion.div style={{ opacity, position:"relative" }}>
+    <motion.div style={{ opacity, position:"relative", }}>
       <LiquidGlass
         key={`${isMobileMenuOpen}-${isMediumScreen}`}
           elasticity={0}
@@ -39,10 +38,10 @@ const Navbar = () => {
               width: isSmallScreen ? "90%" : "80%",
               maxWidth: "1200px",
               zIndex: 100,
-              overflow: "visible"
+              overflow: "visible",
           }}
       >
-        <div className={style.row}>
+        <div className={style.row} style={{marginBottom: isMobileMenuOpen ? "20px" : "0px"}}>
           <h1>James Daunt</h1>
           {!isMediumScreen && (
             <ul>

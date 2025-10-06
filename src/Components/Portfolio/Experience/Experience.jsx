@@ -8,10 +8,12 @@ import { workExperience } from './data.jsx'
 
  
 const Experience = () => {
-  const [selectedDescription, setSelectedDescription] = useState('← click one of the roles to read about what I did during my time there.');
+  const [selectedDescription, setSelectedDescription] = useState(workExperience[0]?.description || '← click one of the roles to read about what I did during my time there.');
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const isSmallScreen = useMediaQuery('(max-width:1000px)');
-  const handleRowClick = (item) => {
+  const handleRowClick = (item, index) => {
     setSelectedDescription(item.description);
+    setSelectedIndex(index);
   };
   return (
     <div id="experience" className={style.experience}>
@@ -22,7 +24,11 @@ const Experience = () => {
                 </tr>
                 {workExperience.map( (item, i) => {
                     return ( 
-                        <tr className={style.row} key={`header-${i}`} onClick={() => handleRowClick(item)}>
+                        <tr 
+                            className={`${style.row} ${selectedIndex === i ? style.selected : ''}`} 
+                            key={`header-${i}`} 
+                            onClick={() => handleRowClick(item, i)}
+                        >
                             <th><img src={item.logo}/></th>
                             {!isSmallScreen && (
                                 <td>
