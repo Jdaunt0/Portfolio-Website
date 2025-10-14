@@ -5,12 +5,16 @@ import style from './style.module.scss';
 import GlassButton from '../GlassButton/GlassButton';
 import SplitText from '../../blocks/TextAnimations/SplitText/SplitText';
 import AnimatedContent from '../../blocks/Animations/AnimatedContent/AnimatedContent';
+import { useMediaQuery } from '@mui/material';
 const About = () => {
+  const isSmallScreen = useMediaQuery('(max-width:700px)');
+  const text = isSmallScreen ? <>Hi 👋 I'm James, <br/>a software & web developer</> : <>Hi 👋<br/>I'm James, <br/>a software & web developer</>;
   return (
     <div className={style.about}>
         <div>
           <SplitText
-            text={<>Hi 👋<br/>I'm James, <br/>a software & web developer</>}
+            key={isSmallScreen ? 'mobile' : 'desktop'} // Force re-mount on media change
+            text={text}
             className="text-2xl font-semibold text-center"
             tag="h1"
             delay={100}

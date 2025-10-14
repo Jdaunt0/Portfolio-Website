@@ -44,7 +44,17 @@ const Experience = () => {
         </table>
         <div className={style.content}>
             <h2>Description:</h2>
-            <p>{selectedDescription}</p>
+            <div className={style.description}>
+                {isSmallScreen && (
+                    <>
+                        <h3>{workExperience[selectedIndex].organisation}</h3>
+                        <p>{workExperience[selectedIndex].title}</p>
+                        <p>{workExperience[selectedIndex].subtitle}</p>
+                        <br/>
+                    </>
+                )}
+                <p>{selectedDescription}</p>
+            </div>
         </div>
     </div>
   )

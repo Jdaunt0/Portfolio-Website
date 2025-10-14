@@ -5,7 +5,6 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import GlassButton from '../../GlassButton/GlassButton';
 import LiquidGlass from 'liquid-glass-react';
 import { useMediaQuery } from '@mui/material';
 import { portfolio } from './data.jsx'
@@ -84,7 +83,7 @@ const Projects = () => {
                             </LiquidGlass>
                             <div className='descriptor'>
                                 <h3>{item.title}</h3>
-                                <p>{item.description}</p>
+                                <h5>{item.description}</h5>
                             </div>
                         </>
                     )}

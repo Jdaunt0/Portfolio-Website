@@ -14,9 +14,7 @@
 
 @media (max-width: 1200px){
     .about{
-        img{
-            display:none;
-        }
+        img{ display:none; }
         .btn{
             justify-content: center;
         }
@@ -25,7 +23,8 @@
 
 @media (max-width: 700px){
     .about{
-        text-align: center;
+        padding-left:10%;
+        padding-right:10%;
         .btn{
             gap: 2rem;
         }
@@ -34,7 +33,6 @@
 
 @media (max-width: 430px){
     .about{
-        text-align: center;
         .btn{
             align-items: center;
             flex-direction: column;

@@ -23,7 +23,7 @@ const LiveStats = () => {
   }, []);
 
   return (
-    <div className={style.tempContainer} id="liveStats">
+    <div className={style.liveStats} id="liveStats">
         <div className={style.logoContainer}>
           <a href="https://leetcode.com/u/Daunty0/" target="_blank" rel="noopener noreferrer">
             <img src={LeetCodeLogo} className={style.logo}/>

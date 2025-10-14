@@ -1,4 +1,4 @@
-.tempContainer{
+.liveStats{
     display:flex;
     align-items: center;
     justify-content: start;
@@ -9,9 +9,9 @@
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: end;
+        align-items: center;
         height: 100%;
-        width: 300px !important;
+        width: 300px;
         flex-shrink: 0;
         padding-right: 24px;
         .logo{
@@ -28,7 +28,7 @@
         width:100%;
         height:100%;
         min-width: 0;
-        overflow: hidden;
+        overflow:hidden;
         .leetcode{
             display:flex;
             justify-content:center;
@@ -50,7 +50,7 @@
             width:100%;
             height: 50%;
             .container{
-                transform: scale(1.5);
+                transform: scale(1.4);
                 display: flex;
                 justify-content:center;
                 background: #181a20;
@@ -66,10 +66,10 @@
 }
 
 @media (max-width: 1840px){
-    .tempContainer{
+    .liveStats{
         .logoContainer{
             align-items: center;
-            width: 200px !important;
+            width: 200px;
         }  
         .content{
             .github{
@@ -82,16 +82,16 @@
     }
 }
 
-@media (max-width: 1000px){
-    .tempContainer{
+@media (max-width: 1200px){
+    .liveStats{
         .logoContainer{
-            display:none;
+            display: none !important;
         }
     }
 }
 
-@media (max-width: 1000px){
-    .tempContainer{
-        padding:24px;
+@media (max-width: 430px){
+    .liveStats{
+        padding:12px;
     }
 }

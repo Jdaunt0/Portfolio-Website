@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import { useTransform, motion, useScroll} from 'framer-motion'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import LiveStats from '../LiveStats/LiveStats'
 import Experience from '../Experience/Experience'
 import Portfolio from '../Projects/Projects'

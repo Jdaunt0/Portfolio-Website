@@ -9,7 +9,6 @@
 .swiper .swiper-slide {
     align-self: center;
     position: relative;
-    width: 80% !important; 
     height: auto !important;
     max-width: min(70vw, 70vh, 900px) !important;
     max-height: min(70vw, 70vh, 900px) !important;
@@ -46,6 +45,7 @@
     box-sizing: border-box;
     z-index: 2;
     width:fit-content;
+    pointer-events: none;
 }
 
 .btn-container{

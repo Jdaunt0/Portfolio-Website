@@ -11,7 +11,6 @@ const Navbar = () => {
   const opacity = useTransform(scrollYProgress, [.15, 0.25], [1, 0]);
   const isSmallScreen = useMediaQuery('(max-width:700px)');
   const isMediumScreen = useMediaQuery('(max-width:1200px)');
-  const panelHeight = !isMediumScreen ? "10rem" : (isMobileMenuOpen ? "20rem" : "7rem");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
