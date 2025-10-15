@@ -1,5 +1,6 @@
 import React from 'react'
 import LiquidGlass from 'liquid-glass-react'
+import { useMediaQuery } from '@mui/material';
 import './GlassButton.css'
 
 const GlassButton = ({ text = "Add Text", onClick }) => {
@@ -8,10 +9,13 @@ const GlassButton = ({ text = "Add Text", onClick }) => {
       <span key={index}>{word}</span>
     )) : text;
   
+  const isMediumScreen = useMediaQuery('(max-width:700px)');
+  
   return (
     <div className="button-container">
       <div className='button'>
         <LiquidGlass
+          padding={isMediumScreen ? "15px 20px" : "25px 30px"}
           onClick={onClick}
           style={{
             cursor: "pointer",

@@ -8,7 +8,7 @@ import AnimatedContent from '../../blocks/Animations/AnimatedContent/AnimatedCon
 import { useMediaQuery } from '@mui/material';
 const About = () => {
   const isSmallScreen = useMediaQuery('(max-width:700px)');
-  const text = isSmallScreen ? <>Hi 👋 I'm James, <br/>a software & web developer</> : <>Hi 👋<br/>I'm James, <br/>a software & web developer</>;
+  const text = isSmallScreen ? <>Hi I'm James, <br/>a software & web developer</> : <>Hi 👋<br/>I'm James, <br/>a software & web developer</>;
   return (
     <div className={style.about}>
         <div>
@@ -25,7 +25,7 @@ const About = () => {
             to={{ opacity: 1, y: 0 }}
             threshold={0.1}
             rootMargin="-100px"
-            textAlign="left"
+            textAlign={isSmallScreen ? "center" : "left"}
           />
           <AnimatedContent
            delay={2}
